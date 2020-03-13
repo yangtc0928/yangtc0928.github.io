@@ -1,0 +1,245 @@
+<! DOCTYPE html>
+
+<head>
+    <meta name="How do you bring lunch to school?" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link href = "../generalCSS.css" type = "text/css" rel = "stylesheet">
+    <link href="https&#58;//fonts.googleapis.com/css?family=Lato&#58;100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https&#58;//fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https&#58;//fonts.googleapis.com/css?family=Playfair+Display+SC&#58;400,400i,700,700i,900,900i" rel="stylesheet">
+    <title>How might we make checking laundry availability easier&#63;</title>
+    <style>
+/*
+        #title-pic{
+            background:url(images/title-pic.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            height: 600px;
+            width: 100%;
+            display:table;
+            margin-top: 10px;
+        }
+*/
+        
+        /*highlight*/
+        hl{
+            text-decoration-color: CCFFFF;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--<script src="BoT.js"></script>-->
+    <script> 
+        $(function(){
+            $("#header").load("../CommonHeader.html"); 
+            $("#footer").load("../CommonFooter.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+<header id = "header"></header>
+
+<div id = "title-pic">
+    <img src = "images/menu-pic.png">
+</div>
+   
+<div class = content>  
+    
+<!--1 overview--><div class = "stagediv">
+    <div id = "title">
+    <h1>How might we make checking laundry availability easier&#63;</h1>
+    </div>
+	
+    <h2>
+        Overview 
+    </h2>
+    <h3>
+        Problem Statement
+    </h3>
+    <p>
+        &#39;&#39;How might we help college students do laundry, especially when they use the shared laundry room, in a more efficient and satisfying way&#63;&#39;&#39;
+    </p>
+    <h3>The Result</h3>
+    <p>
+        LaundroPod is <b>a system that shows students laundry machine availability</b> with lights in a business-card-sized device. We envisioned it to have the ability to <b>retrofit to any laundry machines</b>, allowing laundry providers to upgrade outdated ones without investing too much. 
+    </p>
+<!--
+    <h3>
+        Our Process
+    </h3>
+    <p>
+        We followed the double diamond product development process, which allows us to explore and gather inspiration in a bigger space and be reasonable in every decision. 
+    </p>
+    <img src = "images/doubleDiamondHorizontal.png">
+-->
+    
+    <h3>
+        What I did
+    </h3>
+    <ul>
+        <li>Individually conducted contextual observation and interviewed 5 students</li>
+        <li>Individually synthesized research data and discovered checking availability and refilling balance as two major painpoints</li>
+        <li>Collaborated to conduct market research discovered mismatch between obsolete university laundry systems and their &#39;&#39;cutting-edge&#39;&#39; brand image</li>
+        <li>Collaborated to design the form of the proposed concept</li>
+    </ul>
+</div>
+    
+<!-- 1 primary Research--><div style = "border-bottom: 0px;" class = "stagediv">
+
+    <h2>Undertanding Target Users</h2>
+    <p>
+        The problem statement contains three concepts&#58; &#39;&#39;Shared laundry&#39;&#39;, &#39;&#39;college students&#39;&#39;, and &#39;&#39;efficient and satisfying&#39;&#39;. We need to understand how students interact with their laundry facilities, and what &#39;&#39;efficient and satisfying&#39;&#39; mean to them. To do that, I went to dormatory laundry room to observe what they do and talked to some of them on-site&#58; 
+    </p>
+    
+    <img src = "images/qoutes.png"> 
+
+    <p>
+		<br><br>
+        We combined the information from observation and interview to a job-to-be-done map&#58;
+    </p> 
+	</div>
+</div>
+	
+    <img style = "width: 80%; margin: 0 auto;" src = "images/job-map-w-qoutes.png"> 
+  
+<div class = "content">
+<div class = "stagediv">
+    <h3>Key Insights</h3>
+    <ul>
+        <li>Students worry about not having an open laundry machine because they do not want to waste time and effort carrying laundry bags back and forth. </li>
+		<li>Students avoid trouble by refilling large amount of money at a time to their payment methods. </li>
+		<li>Students who do not like folding clothes but still do it value an organied personal space, but don't like the repetitiveness. </li>
+		<li>Students who do not like folding clothes but still do it tend to procratinate to avoid the work. </li>
+		<li>Clothes sorting depends on how valuable the clothe is to students. </li>
+
+    </ul>
+    
+    <p>
+        Having the insights empowered us to be more empathetic towards how they interact with the laundry facilities. Keeping these in mind, we proceed to identify product opportunity gap and derive product requirements. 
+    </p>
+    
+</div>    
+    
+<!--2 research--><div class = "stagediv">
+    <h2>Analyzing Market Trends</h2>
+    <p>
+        we opened up our scope to each of these concepts to look for significant trends that can potentially impact the problem space. 
+        
+        Three of the trends contributed most to the identification of potential product opportunity and narrowed the problem down&#58; 
+    </p>
+    <ul>
+        <li>
+        <b>Trend One: </b><a href = "https://www.statista.com/statistics/798353/us-smart-home-sales/" target = "_blank">Growing adoption</a> of <a href = "https://www.businesswire.com/news/home/20190603005509/en/Global-Dry-Cleaning-Laundry-Services-Market-worth-USD" target = "_blank">smart laundry devices</a> and growing awareness of <a href = "https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=IoT" target = "_blank">IoT</a>, <a href = "https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=smart%20home" target = "_blank">smart homes</a>, and <a href = "https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=connected%20devices" target = "_blank">connected devices</a>. 
+        </li>
+
+        <li>
+        <b>Trend Two: </b>While universities' brand image consists words like &#39;&#39;innovative&#39;&#39; and &#39;&#39;cutting-edge&#39;&#39;, <a href = "https://medium.com/@todd_99843/why-laundry-matters-on-campus-b0beb739c7ba" target = "_blank">the laundry facilities still feels like the 90s.</a></li>
+		
+		<li><b>Trend Three&#58; </b>Universities are upgrading their lunadry facilities with CSC, a laundry provider, and implemented<a href = "https://www.laundryview.com/about"> LaundryView</a>, a service that tells students availability of laundry machines. However, compared to 2474 4-year institutes in the US, there is still abundant space for growth</li>
+    </ul>
+    <p>
+        The trends contribute to narrowing down the problem space to University laundry room. Now we know there is a market, how do we make sure the product is useful, usable, and desirable&#63; 
+        <br><br>
+    </p>
+    
+</div>
+    
+<!--1 POG and PR--><div class = "stagediv">
+    <h2>Specifying Product Opportunity Gap and Product Requirement</h2>
+    <p>
+        Taking market trends and research insights as fundations, the team went through a process of proposing 14 potential product opportunity gaps and downselecting with clustering and combining. By the end of the process, we end up with one Super Product Opportunity Gap&#58;
+    </p>
+	<img src = "images/get%20to%20POG.png">
+    <p id = emphasize style = "margin: 0 auto; width: 80%;">
+        How might we create a product or service that makes laundry preparation stage, which includes checking machine availability and paying, less time&#45;consuming for students&#63;
+        <br><br>
+    </p>
+    <p>
+        From the product opportunity gap, we envisioned that the potential solutions to&#58; 
+	</p>
+	<img src = "images/pr.png">
+	<p>
+		Following these product requirements, concepts were proposed to improve experience in one or more steps during laundry preparation. 
+    </p>
+</div>
+    
+<!--ideation--><div style = "border-bottom: 0px;" class = "stagediv">
+    <h2>Ideation and Conceptualization</h2>
+    <p>
+        We conducted ideation methods including &#39;&#39;Crazy8&#39;&#39;, &#39;&#39;Brainwriting&#39;&#39;, &#39;&#39;Bad Ideas&#39;&#39;, and narrowed down concepts from over twenty to four major ones. 
+    </p>
+	<img src = "images/ideation.png">
+    <p>
+        After evaluating each major concept based on time constraint, technical feasibility, price, preliminary user feedback and a closer analysis of product requirements and opportunity gap, we selected LaundroPod as the leading concept. 
+    </p>
+</div> 
+</div>
+    
+<!--introducing laundropod-->
+<img style = "width: 100%;" src = "images/introducing.png">
+    
+<div class = content>
+    
+<!--laundropod--><div class = "stagediv">
+    <p>
+        LaundroPod is a system that shows users of laundry machine availability with lights in a business&#45;card&#45;sized device. We envisioned it to have the ability to retrofit to any laundry machines, allowing laundry providers to upgrade outdated ones without investing into new ones. 
+    </p>
+	<img src = "images/system.png">
+    <p>
+        For the laundry room end, there will be weight, vibration, and electric current sensors to detect whether the machine is available or not. The data will be collected and transmitted to each individual device with wifi network. 
+    </p>
+	<img src = "images/how-pod-works.png">
+    <p>
+        The user&#45;end device shows availability with lights when being pressed. The device comes with a sticker and a detachable clip, enabling it to stick to any surfaces or clip onto soft laundry baskets. The ten LEDs are divided into two groups: The blue ones indicates how many washer are available and the yellow ones for dryers. Five LEDs lit indicates five or more machines are available. The green LED ring on the back signals the device in active, incase none of LED is lit. 
+    </p>
+    <img src = "images/context_crop.png">
+    <p>
+         we kept the interaction simple and minimized the effort required on the user&#39;s part to find out the availability of the machines. With the device active only when users press the button, it avoids being intrusive and annoying.
+    </p>
+</div>
+
+<div class = "stagediv">
+	<h2>Conclusion and Reflection</h2>
+	<p>
+		The class project ends with conceptualization phase. However, if the project were to go on, here will be the next steps&#58; 
+	</p>
+	<ul>
+		<li>Battery size need to be speculated based on designed lifespan</li>
+		<li>Wifi connection procedure need to be tested</li>
+	</ul>
+	<p>
+		At the same time, we recognized some aspect of the design that needs further development or prototyping&#58; 
+	</p>
+	<ul>
+		<li>The information provided by LaundroPod creates a better experience for residence buildings that have one big laundry room, but the experience is not as good for the buildings where each floor has a small laundry room. </li>
+		<li>The current way of detecting makes it hard to implement to machines stacked together. New ways of data collection need to be developed. </li>
+	</ul>
+	
+	<h3>Reflection</h3>
+	<p>
+		In this project, my team and I learned how to implement Integrated Product Development methods to come up with a usable, useful, and desireable product. By doing this project, I grew trust in the process by realizing the final product is way different than the solution I thought of when looking at the problem statement. 
+	</p>
+	<p>
+		I used the project as an opportunity to practise my user research skills by trying out different approaches: taking notes versus not taking notes, having a long versus a short list of questions, casual conversation versus structured conversations, etc. As I noticed the pros and cons of each approach, <b>I am building myself as a design researcher who&#58; </b>
+	</p>
+	<ul>
+		<li>Do not take notes but record</li>
+		<li>Have a list of questions but do not follow</li>
+	</ul>
+	
+	
+	
+	
+	
+	
+</div>   
+    
+    
+    
+    
+<!-- for content--> </div> 
+
+    
+    <footer id = "footer"></footer>
+</body>

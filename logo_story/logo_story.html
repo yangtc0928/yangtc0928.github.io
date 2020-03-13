@@ -1,0 +1,375 @@
+<! DOCTYPE html>
+
+<head>
+    <meta name="SusProg" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link href = "../generalCSS.css" type = "text/css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400i,700,700i,900,900i" rel="stylesheet">
+    <title>SusProg 2018</title>
+    <style>
+        #title-pic{
+            background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ), url(images/title-pic.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            height: 700px;
+            width: 100%;
+            display:table;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("../CommonHeader.html"); 
+            $("#footer").load("../CommonFooter.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+<div id = "header"></div>
+
+<div id = "title-pic">
+    
+<div id = "title">
+    <h1>The logo story</h1>
+    <h3>
+        Hey! You found the secret page! Here, I will talk about how my logo was designed, and you will find out a lot more about me!
+        <br><br>
+    </h3>
+    <h6>
+        Graphic Design&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
+        Self-initiate Project&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
+        Graphic Designer
+    </h6>
+</div>
+    
+</div>
+   
+<div class = content>
+
+    
+<!--kick off--><div class = "stagediv">
+    <h2>
+        The user
+    </h2>
+    <h3>
+        Yes, that's me. 
+    </h3>
+    <p>
+        SusProg3D is the premier kinematic suspension design and analysis tool. As the suspension team lead of Lehigh Racing Formula SAE team, I have been using it to design our unique carbon fiber flexure suspension system for two years. 
+    </p>
+    <p>
+        I noticed many imperfection in terms of its usability issues. For instance, the layout of the menu can easily confuse users, and the unintuitive display of contents lowers the readability of parameters and thus make it hard to use. With all the issues mentioned above, not only me but also my team members had to cross-check and correct the parameters over and over again. Therefore, I want to challenge myself to: 
+    </p>
+    <h5 id = emphasize style = "text-align: center">
+        Make the use of SusProg3D more efficient and effortless for users by increasing the usability and readability of its main interface. 
+    </h5> 
+</div>
+    
+<!--research--><div class = "stagediv">
+    <h2>
+        Stage Two: Research
+    </h2>
+    <h3>
+        1. Understanding SusProg
+    </h3>
+    <p>
+        SusProg3D’s interface is made up of three kinds of windows:<br>
+        Adjustment, Display, and Result. 
+    </p>
+    <img src = "images/three%20windows.png">
+    <h3>
+        <br>2. User Research
+    </h3>
+    <p>
+        I started with researching on redesign and user research strategies. To avoid the common redesign pitfalls and generate a better redesign strategy for this challenge, I reviewed many UI redesign projects by other designers (e.g., Instagram Redesign by Kim Thuy Tu). Successful re-designs have a common property: They don’t completely re-do the interface, but make them better by improving in details. They not only improve the look, but also the experience provided by the interface. 
+    </p>
+    <p>
+        To understand user’s pain points, I interviewed two of my teammates who are both engineers and have been frequently using the software for suspension design. I mapped out the key insights using post-it notes: 
+    </p>
+    <img src = "images/reseach-result.png">
+    <p>
+        After combining all the responses and reactions, The following analysis were made:
+    </p>
+    <ol>
+        <li>Frequently switch between main menu to see Results
+            <ul>
+                <li>Each lv.1 item has its corresponding Result window. It takes extra steps to see switch between them. </li>
+            </ul>
+        </li>
+        <li>Easy to make mistakes while reading “Result”
+            <ul>
+                <li>All datas in results are squeezed together, without any space dividing different categories apart. </li>
+                <li>Coordinates are listed in YXZ format, which is counter-intuitive. This particular feature lead to the waste of parts. </li>
+            </ul>
+        </li>
+        <li>Easy to get lost 
+            <ul>
+                <li>There are mismatch between options’ names and their content. </li>
+            </ul>
+        </li>
+        <li>Display is good but users look at the display only to roughly validate input.</li>
+    </ol>
+    
+    <p><br>Based on the research insights, I listed the following redesign goals:</p>
+    <ol>
+        <li id = emphasize>Integrate Result windows</li>
+        <li id = emphasize>Optimize Result window format</li>
+        <li id = emphasize>Eliminate mismatch between tab names and functions</li>
+        <li id = emphasize>Reconstruct information architecture</li>
+        <li id = emphasize>Downsize the area of Display window</li>
+        </ol>     
+</div>
+    
+<!--ideation--><div class = "stagediv">
+    <h2>
+        Stage Three: Ideation
+    </h2>
+    <p>
+        The major goal of a new interface layout is to utilize the screen at a higher efficiency. Since users don’t often visit the Display window, it can give space to Adjustment or Result, or both. Often-used functions, like calculation, can be put into a fixed panel, thus reduces the time to find and open windows.
+    </p>
+    
+    <!--idea1--><div class = "idea">
+    <h4>
+        Idea One
+    </h4>
+    <img src = "images/idea1.jpeg">
+    <p>
+        The screen is divided into three sections to provide separate spaces for all three features: Adjustment, Display, and Result. Calculate is located right below Adjustment, so users don’t have to open “ECalc” to refresh result.
+    </p>
+    <div class = table-container>
+    <div class = "table-cell">
+        <h4>
+            Pros:
+        </h4>
+        <p>
+            In this layout, users can view all three windows at the same time. It saves the time of opening up “Result” or moving pop-up windows around. Moving between different results gets much easier due to the tab design. Making Calculation window always shown also eliminates the risk of closing “ECalc” window accidentally.
+        </p>
+    </div>
+    <div class = "table-cell">
+        <h4>
+            Cons:
+        </h4>
+        <p>
+            The disadvantage lies in the space of each window. Adjustment and result window can take up wide space, probably wider than the space in the sketch. Wide windows will squeeze Display window into a tiny area. Furthermore, fixing the adjustment window means it is impossible to show more than one adjustments at a time.
+        </p>
+    </div>
+    </div>
+        <img src = "images/all-windows-open.png">
+        <h6>
+            All Adjustment and Result windows open (Adjustments aligned to the left border, Results to the right). Without rearranging layouts of the windows, display could end up being squeezed into several pixels. It simply looks weird.
+        </h6>
+</div> 
+    
+    <!--idea2--><div class = "idea"> 
+    <h4>
+        Idea Two
+    </h4>
+    <img src = "images/idea2.jpeg">
+    <p>
+        Adjustment window takes up almost half of the screen. Since there is so much space, the sub-menu is eliminated. All the adjustment features will be directly put under the main menu and show up together. The Display window is the smallest on the screen.
+    </p>
+    <div class = table-container>
+    <div class = "table-cell">
+        <h4>
+            Pros:
+        </h4>
+        <p>
+            This reduces the time spent navigating between sub-menus and solves the problem of not being able to open multiple Adjustment windows at the same time.
+        </p>
+    </div>
+    <div class = "table-cell">
+        <h4>
+            Cons:
+        </h4>
+        <p>
+            The result window too short. If users are looking through a long chain of data that stretch beyond the window, they have to scroll to see the whole picture. This might create some frustration in suspension design because sometimes we make decisions based on both ends of a data chain.
+        </p>
+    </div>
+    </div>
+</div> 
+    
+    <!--idea3--><div class = "idea">
+    <h4>
+        Idea Three
+    </h4>
+    <img src = "images/idea3.jpeg">
+    <p>
+        Compared to the previous one, this layout gives enough space for Result. The layout limits the space for Adjustment window, which leads to the necessity of sub-menu.
+    </p>
+    <div class = table-container>
+    <div class = "table-cell">
+        <h4>
+            Pros:
+        </h4>
+        <p>
+            Enough space for Result.
+        </p>
+    </div>
+    <div class = "table-cell">
+        <h4>
+            Cons:
+        </h4>
+        <p>
+            There can be only one window open at a time.
+        </p>
+    </div>
+    </div>
+</div> 
+    
+    <!--idea4--><div>
+    <h4>
+        Idea Four
+    </h4>
+    <img src = "images/idea4.jpeg">
+    <p>
+        In this design, I made Adjustment pop-up windows and divided the screen by half: the left half is Display window and the right half is Result.
+    </p>
+    <div class = table-container>
+    <div class = "table-cell">
+        <h4>
+            Pros:
+        </h4>
+        <p>
+            This allows users to open multiple Adjustment windows at once, while leaving enough space for Result.
+        </p>
+    </div>
+    <div class = "table-cell">
+        <h4>
+            Cons:
+        </h4>
+        <p>
+            The Adjustment windows will be covering Display, if Result and Display need to be viewed together.
+        </p>
+    </div> 
+    </div>
+</div> 
+</div>
+    
+<!--design--><div class = stagediv>
+    <h2>
+        Stage Four: Design
+    </h2>
+    <p>
+        Since Display window has the least visits from users, I chose to proceed with <span class = "b">Idea Four</span>. <span class = "b">Idea One</span> and <span class = "b">Idea Three</span> have a common disadvantage, which is not allowing multiple windows to show at once. This hinders usability greatly since vehicle dynamics often depends on multiple factors. The Result window in <span class = "b">Idea Two</span> is too short to contain long chains of data, which is needed when optimizations are taking place. 
+    </p>
+    <h3>
+        Visual Interface Design
+    </h3>
+    <img src = "images/design-img.png">
+    <p>
+        We changed main menu from only words to icons and words, and added an subtle arrow underneath to highlight the hierarchy.
+    </p>
+    <p>
+        Calculation-related buttons are put into a fixed panel, so deliberately opening the ECalc window is no longer necessary, and the risk of closing it is no longer a problem.
+    </p>
+    <p>
+        One of the new features is Result window tabs. Every time the user clicks “VCalc to new result”, SusProg3D 2018 creates a new result tab. This feature has two purposes:
+    </p>
+    <ol>
+        <li>
+            In SusProg3D, there is no significant difference between old and new results, so there is a greater chance for confusion. Multiple tabs allow comparison between old and new results by different names;
+        </li>
+        <li>
+            “VCalc to New Result” prevents the user from forgetting to create a new result tab and end up overwriting the old results.
+        </li>
+    </ol>
+    <p>
+        While a new result tab is created, old result tabs are automatically locked. The lock icon is to ensure our user that the old result does not change after re-calculation. When more than three results are viewed, which happens very often, the user can easily navigate between different results and distinguish before and after.
+    </p>
+    <p>
+        Result content is re-formatted. Compared to SusProg3D, non-related contents are separated clearly to reduce misreading.
+    </p>
+    <p>
+        Display controls are moved to the top of the new Display window. Display controls in the old design scatter across the interface. Bringing them closer and into the display window makes them easier to find. Specially designed icons make the control buttons more intuitive.
+    </p>
+    <img src = "images/Display.png">
+    
+    <h3>
+        Information Architecture Design
+    </h3>
+    <p>
+        Users reported that it is easy to get lost while trying to find a function. Clickstream proved the same thing. After listing the information architecture of SusProg3D, I found that some menus are useless, and some options’ names do not correspond to their content.
+    </p>
+    <p>
+        Eight main menu branches are reduced to six. “Roll and Bump” and “Rates” are eliminated, since after “calculation”, “view control” and “results” are relocated, there is nothing under them. “Mass” is added to “Spring, Shock, ARB”, because spring properties are closely related to mass properties. “Susp” and “Pullrod” are put together and renamed “Suspension” to eliminate confusion. As part of the “Pullrod” features were in “Susp” window originally.
+    </p>
+    <div class = "fullscreen-container">
+        <div class = "table-cell middle">
+            <img src = "images/info-arch-before.png">
+        </div>
+        <div class = "table-cell middle">
+            <img src = "images/info-arch-after.png">
+        </div>
+    </div>
+</div>
+    
+<!--usability--><div class = stagediv>
+    <h2>
+        Stage Five: Usability Test
+    </h2>
+    <h3>
+        Workflow Example
+    </h3>
+    <p>
+        To showcase the increased efficiency, let’s look at an example workflow. Say we want to move one of our A-arm point position, and see what difference it makes on wheel camber angle.
+    </p>
+    <h4>
+        SusProg3D
+    </h4>
+    <img src = "images/susprog1.png">
+    <p>
+        First, we need to do a calculation to see the result before we change the parameters. We go to ECalc and calculate. Then, we go to Roll/Bump to open the Result window. Put it on the side.  
+    </p>
+    <img src = "images/susprog2.png">
+    <p>
+        Then, we go to geometry. We open chassis, and change the point to 200.If we closed Calc window by clicking “OK” accidentally, we must open it again. 
+    </p>
+    <img src = "images/susprog3.png">
+    <p style = "border-bottom: 1px dashed #DEDDDD; padding-bottom: 20px;">
+        After calculation, go to Roll Bump again, and open result. 
+    </p>
+    
+    <h4 style = "padding-top: 10px;">
+        SusProg3D 2018
+    </h4>
+    <img src = "images/susprog2018-workflow.png">
+    <p>
+        With the upgraded version, users won’t be bothered by opening “Ecalc” and “Result” windows. Number of steps are greatly reduced. Two different results are presented clearly due to different tab names. 
+    </p>
+</div>
+    
+<!--reflection--><div class = stagediv>
+    <h2>
+        Stage Six: Review &amp; Reflection
+    </h2>
+    <p>
+        In this redesign project, we went through problem definition, research, ideation, and design processes, to analyze the pain points of SusProg3D, and create SusProg3D 2018. SusProg3D 2018 is a upgraded version of SusProg3D. It comes with a fresher look, a more intuitive interface, and a more reasonable information architecture. With these improvements, suspension engineers can waste less time on navigating through the software, and focus on designing a better suspension system. 
+    </p>
+    
+    <h4>
+        Reflection
+    </h4>
+    <ol>
+        <li>
+            Designing is a continuous and never-ending process. A design can never be perfect, only better than the existing one. In the design process, new ideas keep emerging, and old designs are constantly overthrown. You can never understand too much about your users.
+        </li>
+        <li>
+            Alex Barashkov’s <span><a href = "https://medium.com/pixelpoint/why-i-hate-your-fake-redesign-177a626d7f95">“Why I hate your redesign”</a></span> blog states that redesign project should not only improve a product’s appearance, but also other aspect such as usability and business model. SusProg3D comes at a price of $25 / year. 
+        </li>
+        <li>
+            It is important to define the problem before starting the design.
+        </li>
+        <li>
+            To avoid coming up with new ideas at the very end of the design process, designers should frequently go over user flow from the start to the end during the whole design process. Because as designers, we know what will happen, but users don’t. 
+        </li>
+    </ol>
+</div>
+    
+</div>    
+<div id = "footer"></div>
+</body>

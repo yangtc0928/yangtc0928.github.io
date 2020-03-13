@@ -1,0 +1,275 @@
+<! DOCTYPE html>
+
+<head>
+    <meta name="Formula SAE" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link href = "../generalCSS.css" type = "text/css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400i,700,700i,900,900i" rel="stylesheet">
+    <title>Formula SAE</title>
+    <style>
+/*
+        #title-pic{
+            background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ), url(images/title-pic.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            height: 700px;
+            width: 100%;
+            display:table;
+            margin-top: 10px;
+        }
+*/
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("../CommonHeader.html"); 
+            $("#footer").load("../CommonFooter.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+<header id = "header"></header>
+
+<div id = "title-pic">
+    <img src = "images/menu-pic.jpg">
+</div>
+   
+<div class = content>
+
+
+<!--1 overview--><div class = "stagediv">
+    <div id = "title">
+    <h1>How might we design suspension that drives a race car faster&#63;</h1>
+<!--
+    <h3>
+        <b>Challenge&#58;</b><br><br>
+        Design the suspension system for Leigh Formula Racing&#39;s race car, namely X48, for the 2018 Formula SAE racing competition. 
+        <br><br>
+    </h3>
+    <h6>
+        Automotive Engineering&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
+        Team Project&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
+        Suspension Design Lead
+    </h6>
+-->
+    </div> 
+    <h2>
+        <br>
+        Background&#58; The Competition and Our Team
+    </h2>
+    <img src = "images/team-pic.jpg">
+    <p>
+    <br>
+    Formula SAE is a car racing competition in which college students teams design, manufacture, and race an open-wheel, single-seat race car. The competition is located at Michigan International Speedway every year in May, and is made up of eight different sections within two main events&#58;
+    </p>
+    <h3>Static events (Design Engineering)&#58; </h3>
+    <ul>
+        <li>Engineering design, in which we try to justify our design decisions to the judges&#59;</li>
+        <li>Cost analysis, in which we prove that every dollar spent corresponds to better performance&#59;</li>
+        <li>Business presentation, in which we try to persuade judges that our design is the best at its price range;</li>
+    </ul>
+    <h3>Dynamic events (Performance Evaluation)&#58; </h3>
+    <ul>
+        <li>Acceleration&#59;</li>
+        <li>Skidpad, in which the car drive in a figure-8 track to test its cornering ability&#59;</li>
+        <li>Autocross, in which we drive the car individually around an obstacle circuit mapped out by cones. The fasted lap among three total laps is taken&#59;</li>
+        <li>Endurance, in which we drive the car individually around the autocross circuit for 13 laps to test its reliability. Overall time is taken&#59;</li>
+        <li>Fuel efficiency, in which the car&#39;s fuel consumption is recorded before and after the endurance race&#59;</li>
+    </ul>
+
+    <p>
+        Our Lehigh Formula SAE team is made up of six minor groups, which supports different parts of design engineering&#58; chassis, powertrain, suspension, driver ergonomics, electronics, and business. We have competed with over a hundred teams from all over the world every year. 
+    </p>
+    
+    <h2>
+        <br>
+        How X48, Our Race Car, Performed
+    </h2>
+    <img src = "images/comp.jpg">
+    <p>
+        Racing is never predictable. The weather on the racing day was unstable in Michigan International Speedway. Some teams ran on a dry circuit, and some, including us, ran on a wet one, or even in the rain. The rain caught us off-guard and started to pour when we were running skidpad. Missing the chance to switch to rain tires, our team finished the race in the worst condition. In terms of which, the finishing time differences between dry and wet conditions can create large gaps. However, we still finished the competition by improving our rankings in every aspect&#58; 
+    </p>
+    <img src = "images/result.png">
+</div>
+       
+<!--2 Goals and results--><div class = "stagediv">
+    <h2>
+        How the Story Started
+    </h2>
+    <h3>
+        Analyzing X47
+    </h3>
+    <p>
+        The X47 is our previous generation race car. It finished the 2017 Formula SAE competition at the 10th percentile. Analyzing the X47 is the first step for designing the X48. 
+    </p>
+    <h4>
+        1. Lacking tire performance
+    </h4>
+    <p>
+        By analyzing the tire data and suspension geometry settings with Matlab and SusProg3D and comparing the results with our lap times and tire wear, we realized that we did not use the tires’ full potential due to imperfect suspension geometry and actuation settings. 
+    </p>
+    <h4>
+        2. Under-tuned vehicle set-up
+    </h4>
+    <p>
+        Due to the delay in manufacturing delivery, we lost a lot of time for testing and tuning. The X47 was severely under-tuned. This led to an unstable vehicle dynamics, which gave the driver a hard time. 
+    </p>
+    <h4>
+        3. Overweight Body
+    </h4>
+    <p>
+        The X47 is the heaviest among similar non-aero cars. Over-engineered and under-optimized parts take most responsibilities. 
+    </p>
+    
+    <h3>
+        <br>Thus, the goals for X48 are&#58;
+    </h3>
+
+    <ul>
+        <li id = "emphasize">Optimize geometry and actuation to fit tire characteristics</li>
+        <li id = "emphasize">Finish manufacturing the car early for testing and tuning</li>
+        <li id = "emphasize">Reduce weight by at least 10%</li>
+    </ul>    
+    
+    
+</div>
+    
+<!--3 engineer--><div class = "stagediv">
+    <h2>
+        Design and Engineering of X48
+    </h2>
+    
+    <h3>
+        Overviewing the Suspension System
+    </h3>
+    <p>
+        The suspension system is one of the most sophisticated systems on a race car. Suspension setup greatly influences how the car handle, so designing a lightweight, adjustable, reliable, and, most importantly, the suitable suspension system is crucial. 
+        <br><br>
+        Suspension system design can be divided into four steps&#58; 
+    </p>
+    <ol>
+        <li>Understanding the tires&#59; </li>
+        <li>Setting suspension geometry and actuation layout&#59; </li>
+        <li>Designing, validating and manufacturing parts&#59; </li>
+        <li>Testing and tuning. </li>
+    </ol>
+    <p>
+        In this section, I will briefly explain some essential concept and how we made our design decisions in each step. 
+    </p>
+    
+    <h3>
+        <br>Grippier Tires
+    </h3>
+    <h4 class = "grey">
+        Visualizing tire data with Matlab
+    </h4>
+    <img src = "images/tire1.png">
+    <p>
+        Hoosier, a performance tire manufacturer, released its new tires by the time we started designing the X48. By analyzing the data provided by them, we found that the new tires generate about 550lbf/deg of lateral force, 20lbf/deg more than the old ones. 
+    </p>
+    <p>
+        New tires were 16 inches in diameter, 2 inches smaller than the old ones. The smaller size cuts the weight down by 22% and increases tire stiffness by 4%. Less weight allows faster acceleration, and higher stiffness makes vehicle dynamics more sturdy. 
+    </p>
+    
+    <h3>
+        <br>Nimbler Vehicle Dynamics
+    </h3>
+    <h4 class = "grey">
+        Optimizing geometry & actuation with SusProg3D and SolidWorks
+    </h4>
+    <img src = "images/geometry.png">
+    <p>
+        We came up with 10+ geometry and actuation layout proposals with the help from SusProg3D and SolidWorks. The best one was picked based on&#58; 
+    </p>
+    <ul>
+        <li>Ground clearance <span style="color: gray">(if any of the parts touches the ground in any condition)</span></li>
+        
+        <li>Parts clearance <span style="color: gray">(if any of the parts touches other parts in any condition)</span></li>
+        
+        <li>Geometry characteristics <span style="color: gray">(if the tires are put under the best condition at all time)</span></li>
+        
+        <li>Actuation efficiency <span style="color: gray">(if we have used all the potentials of the springs and dampers)</span></li>
+        
+        <li>Accessibility <span style="color: gray">(if we can change settings quickly enough)</span></li>
+    </ul>
+    <p>
+        Optimized geometry and actuation generate higher mechanical grip and stabler vehicle dynamics. The connection between the driver and the car is greatly enhanced. 
+    </p>
+
+    <h3>
+        <br>Lighter Weight
+    </h3>
+    <h4 class = "grey">
+        Taking out unnecessary material by finite element analysis  
+    </h4>
+    <img src = "images/front-susp.png">
+    <p>
+        The uprights have to be as light as possible and strong enough to take the load from the tires, so we made them out of grade 7 aluminium. The material has a high strength-mass ratio, so it is also used on jets and Formula 1 cars. Computer numerical controlled (CNC) machining is the best manufacturing option because of its low cost, high precision, and the ability to carve complex shapes. 
+    </p>
+    <p>
+        15% of the weight was cut down by redesigning the front and rear uprights. We did finite element analysis with SolidWorks to see the load distribution and cut out the areas not taking loads. To lower the material used as much as possible while keeping it from failing, the factor of safety was kept between 1 and 3.2. 
+    </p>
+    
+    <h3>
+        <br>More Flexible Adjustments
+    </h3>
+    <h4 class = "grey">
+        Adding camber adjustments by implementing shims  
+    </h4>
+    <img src = "images/rear-susp.png">
+    <p>
+        To exploit more potential out of the new tires, we decided to make rear camber adjustable, which means adding a camber adjustment mechanism to the rear upright. Two solutions, eccentric bolts, and shims were proposed&#58;
+    </p>
+    <img src = "images/shim-vs-eccentric.png">
+    <p>
+        <br>Although eccentric bolts allow quicker and continuously variable adjustment, it is harder to manufacture and more prone to failure. Shims, on the other hand, suit us better with its reliability and manufacturing easiness. 
+    </p>  
+</div>   
+
+<!--4 tuning testing--><div class = "stagediv">
+    <h2>
+        Testing and Tuning of X48
+    </h2>
+    <p id = emphasize style = "margin-bottom: 0px;">
+        &#39;&#39;We build a monster, and spend a year understanding it.&#39;&#39;
+    </p>
+    <h4 style = "text-align: right; margin-top: 0px;">
+        &#45;&#45; James Allison, Technical director of Mercedes AMG F1 team
+    </h4>
+    <p>
+        <br>Even Mercedes AMG, the three-time consecutive constructor champion, is unable to fully predict the performance their car, there is no way we can. This is why testing and tuning is so important. 
+    </p>
+    <p>
+        By delivering the car on schedule in March, we had a sufficient two-month period to test and tune our car before the competition starts.
+    </p>
+    <p>
+        First, We made sure different parts functioned well and the suspension had enough clearance to articulate. Smooth acceleration and braking and emergency brake tests were conducted to ensure reliability.
+    </p>
+    <p>
+        Then, suspension settings were tested intensively to find the most optimized solution. to work around the lack of expensive and intricate sensors, we mounted a GoPro on the car to record all suspension movements. Tire wear was examined and recorded after each trial. We combined the results with the driver's feedbacks to decide what and how much change is needed. Spring rates, damper parameters, anti-roll bar stiffnesses, camber angles, and many other parameters were tuned repeatedly for maximum grip and neutral-steering in corners, acceleration, and braking. 
+    </p>
+    <p>
+        Together with better engine performance, we dropped about 0.8 sec in skidpad and about 3 sec in acceleration compared to the X47. 
+    </p>
+</div>
+    
+
+    
+<!--6 x49--><div class = "stagediv">
+    <h2>
+        Visions for X49
+    </h2>
+    <p>
+        Immediately after the 2018 competition, another round of reviewing, brainstorming, troubleshooting, and problem-solving process began. By the time you read this, the X49 is probably already fully designed, manufactured, and is running in a parking lot of Lehigh University with the latest innovations. 
+    </p>
+    
+</div>
+</div>   
+    
+
+<footer id = "footer"></footer>
+</body>

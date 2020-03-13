@@ -1,0 +1,89 @@
+html{
+    font-family: "lato"; 
+    text-align: center;
+    
+}
+
+body{
+    width:75%;
+    margin: 10px auto;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    border-width: 0px;
+}
+
+.header{
+    height: 80px;
+    max-width: 1200px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+#headerlogo{
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-right: 25px;
+}
+
+#headerlogo:hover{
+    content: url(HomePage/logo_hover.png);
+}
+
+.name{
+    text-align: left;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 105px;
+}
+
+.name h1{
+    font-size: 24px;
+    margin: 0px 0px;
+    font-weight: 400;
+}
+
+.name h3{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+#bg {
+    width: 100%;
+    
+    
+}
+
+.nav{
+    float: right;
+    display: flex;
+}
+
+.nav-item{
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-item:hover{
+    background-color: black;
+}
+
+.navitemword:hover{
+    color:white;
+    transition: 0.2s;
+}
+
+.image{
+    width: 100%;
+    border-radius: 0px;

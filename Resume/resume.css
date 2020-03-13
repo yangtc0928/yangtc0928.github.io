@@ -1,0 +1,129 @@
+html{
+    font-family: "lato"; 
+    text-align: center;
+}
+
+body{
+    margin: 10px 0px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#title h1{
+    letter-spacing: 5px;
+    font-family: "Lato";
+    font-weight: 700;
+    color: black;
+}
+
+#title h2{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.content{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.profile{
+    margin-top: 50px;
+}
+
+#profilepic{
+    border-radius: 50%;
+    height: 350px; 
+}
+
+.profile h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.profile h3{
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.stagediv{
+    box-sizing: content-box;
+    border-bottom: 1px solid #DEDDDD;
+    padding: 50px 50px;   
+}
+
+#contact{
+    margin-top: 50px;
+}
+
+h2{
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h4{
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h5{
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h6{
+    font-weight: 400;
+    width: 75%;
+    margin: 10px auto 30px;
+    text-align: center;
+}
+
+.grey{
+    color: gray;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+p, li{
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+#emphasize{
+    font-size: 24px;
+    font-weight: 400; 
+    color: darkred;
+    font-style: italic;
+}
+
+.pdf{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pdf:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}

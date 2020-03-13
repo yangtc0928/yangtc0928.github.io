@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<head>
+    <meta name="header" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <style>
+        html{
+            font-family: "lato"; 
+            text-align: center;
+        }
+
+        body{
+            margin: 10px 0px;
+        }  
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .header{
+            height: 60px;
+            width: 60%;
+            max-width: 1200px;
+            min-width: 400px;
+            margin: auto;
+        }
+
+        #headerlogo{
+            height: 60px; 
+            width: 60px; 
+            float: left;
+            margin-right: 25px;
+        }
+        
+        #headerlogo:hover{
+            content: url(../HomePage/logo_hover.png);
+        }
+
+        .name{
+            text-align: left;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 75px;
+        }
+
+        .name h1{
+            font-size: 18px;
+            margin: 0px 0px;
+            font-weight: 400;
+        }
+
+        .name h3{
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 0px;
+            margin-top: 4px;
+        }
+
+        .nav{
+            float: right;
+            display: flex;
+        }
+
+        .nav-item{
+            font-weight: 300;
+            font-size: 14px;
+            margin-left: 40px;
+            list-style-type: none;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .nav-item:hover{
+            background-color: #F7CA18;
+        }
+
+        .navitemword:hover{
+            color:white;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+<div class = header>
+    <a href = "../index.html">
+        <img ID = "headerlogo" src = "../HomePage/logo_normal.png">
+    </a>
+    
+    <div class = "name">
+        <h1>
+            TIANCHENG &#39;&#39;TC&#39;&#39; <br> YANG
+        </h1>    
+    </div>
+        
+    <ul class = "nav">
+<!--
+        <li class = "nav-item">
+            <a class = "navitemword" href = "../index.html">
+                Projects
+            </a>
+        </li>
+-->
+        <li class = "nav-item">
+            <a class = "navitemword" href = "../Gallery/Gallery.html">
+                Photography
+            </a>
+        </li>
+        <li class = "nav-item">
+            <a class = "navitemword" href = "https://www.youtube.com/channel/UCVjLHoMrL066ttpQIzpFgAw/featured?view_as=subscriber">
+                Film Making
+            </a>
+        </li>
+<!--
+        <li class = "nav-item">
+            <a class = "navitemword" href = "/log/log.html">
+                Film Making
+            </a>
+        </li>
+-->
+    </ul>
+</div>
+</body>
