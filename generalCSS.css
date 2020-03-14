@@ -9,6 +9,7 @@ body{
 .stagediv a{
     color: black;
     text-decoration: underline;
+	text-decoration-color: #F5D76E;
 }
 
 b{
@@ -132,9 +133,10 @@ p, li{
 }
 
 .stagediv a:hover {
-  color: orange;
-  background-color: transparent;
-  text-decoration: underline;
+  	color: orange;
+  	background-color: transparent;
+  	text-decoration: underline;
+	text-decoration-color: #F5D76E;
 }
 
 #emphasize{
@@ -179,54 +181,6 @@ p, li{
     font-size: 60px;
     color: darkblue;
 }
-
-/*
-.menu-wrapper {
-	position: relative;
-	max-width: 500px;
-	height: 100px; // hide the scroll bar
-	margin: 1em auto;
-	border: 1px solid black;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-
-.menu{
-	height: 120px; // hide the scroll bar
-	background: #f3f3f3;
-	box-sizing: border-box;
-	
-	white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch;
-}
-	
-.item {
-		display: inline-block;
-		width: 100px;
-		height: 100%;
-		outline: 1px dotted gray;
-		padding: 1em;
-		box-sizing: border-box;
-	}
-
-.paddle {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 3em;
-}
-.left-paddle {
-	left: 0;
-}
-.right-paddle {
-	right: 0;
-}
-.hidden {
-	display: none;
-}
-*/
 
 
 
