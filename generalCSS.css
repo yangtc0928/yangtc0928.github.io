@@ -103,11 +103,30 @@ b{
     text-align: center;
 }
 
+/*for kdc*/
+.teampic{
+    float: left;
+    width: 15%;
+    margin-right: 10px;
+}
+
+/*for kdc*/
+.teampic:hover{
+    box-shadow: 0px 0px 5px grey;
+    transition: 0.2s;
+}
+
+#tester{
+/*    margin-bottom: 10px;*/
+}
+
+/*for Susprog*/
 .idea{
     margin-bottom: 50px;
     border-bottom: 1px dashed #DEDDDD;
 }
 
+/*for lunchbox*/
 .imgBox{
     display: inline-block;
     width: 49%;
@@ -115,6 +134,7 @@ b{
     align-content: center;
 }
 
+/*for lunchbox*/
 #imgBoxh{
     margin-top: 5px;
     font-weight: 400;
@@ -145,6 +165,13 @@ p, li{
     color: darkred;
     font-style: italic;
 }
+
+#videomark mark{
+    background-color: FFB800;
+    color: white;
+    font-size: 24px; 
+}
+
 
 .table-container{
     display: table;
