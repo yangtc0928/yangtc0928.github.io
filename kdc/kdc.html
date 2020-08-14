@@ -1,0 +1,290 @@
+<! DOCTYPE html>
+
+<head>
+    <meta name="How might we make Amazon Prime Video a destination when people are waiting for coffee&#63;" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link href = "../generalCSS.css" type = "text/css" rel = "stylesheet">
+    <link href="https&#58;//fonts.googleapis.com/css?family=Lato&#58;100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https&#58;//fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https&#58;//fonts.googleapis.com/css?family=Playfair+Display+SC&#58;400,400i,700,700i,900,900i" rel="stylesheet">
+    <title>How might we make Amazon Prime Video a destination when people are waiting for coffee&#63;</title>
+    <style>
+        hl{
+            text-decoration-color: CCFFFF;
+        }
+        mark{
+            background-color: FFB800;
+            color: white;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("../CommonHeader.html"); 
+            $("#footer").load("../CommonFooter.html"); 
+        });
+    </script> 
+</head>
+
+<body>
+<header id = "header"></header>
+
+<div id = "title-pic">
+    <img src = "asset/title-pic.png">
+</div>
+   
+<div class = content>  
+    
+<!--1 overview--><div class = "stagediv">
+    <div id = "title">
+    <h1>How might we make Amazon Prime Video a destination when people are waiting for coffee&#63;</h1>
+    </div>
+	
+    <h2>
+        Overview 
+    </h2>
+    <p>
+        Starting in October and ending in November 2019, this project is our proposal to the Kellogg Design Challenge sponsored by Amazon Prime Video. Our team, consisting of six CMU students with diverse backgrounds, competed in the semi-final round of the competition. 
+    </p>
+    <p>
+        The problem statement, provided by Prime Video, outlines a new direction for potential future Prime Video use scenarios&#58;
+    </p>
+    <p id = emphasize style = "margin: 20 auto; width: 80%;">
+        How could Prime Video become the destination for TV and movie viewers, outside of times when they are planning to watch something&#63; &#40;i.e. what is our 3-minute coffee line experience&#63;&#41;
+    </p>
+    <p>
+        In the following parts, I will show you the solution we proposed and walk you through our research and design process. 
+    </p>
+    
+    <h2><br>Our Solution&#58; VideoMark</h2>
+    <img src = "asset/solution.png">
+    <p>
+        <br>VideoMark, consisting of three features&#58; 
+    </p>
+    <img src = "asset/feature.png">
+    <p>
+        The three features creates a close cycle that <b><mark>encourages active Prime Video users to mark and share video clips</mark></b> to social media, and <b><mark>allows non Prime Video users to watch a short clip during their coffee break</mark></b>, thus <b><mark>creates a hook</mark></b> leading them to become a Prime Video user at the instant or later. The cycle, put into a diagram, look like this&#58;<br><br>
+    </p>
+    <img src = "asset/solution_2.png">
+    <p>
+        In the next sections, I will show you how we approached the problem and our design research process, and explain the solution in detail. 
+    </p>
+    
+</div>
+    
+<!-- design research--><div class = "stagediv">
+
+    <h1>Design Research</h1>
+    <p>
+        <b>My contributions in this stage include&#58;</b>
+    </p>
+    <ul>
+        <li>Conducted <a href = "#observation">passive observation</a> in context</li>
+        <li>Lead the creation of the <a href = "#interview">semi-structured interview</a> protocol and interviewed 7 Prime members</li>
+        <li>Lead the thematic analysis with affinity diagram</li>
+        <li>Created <a href = "#persona">persona for two user architypes</a></li>
+<!--        <li>Helped analyze <a>survey</a> data</li>-->
+    </ul>
+    
+    <h2><br><br>Domain Research&#58; Understand the Market</h2>
+    <p>
+        To understand the current market environment, potential challenges Prime Video is facing, and people's general behavior using digital devices, we asked the following questions: 
+    </p>
+    <ul>
+        <li>What are people's behavior patterns on digital devices and online platforms&#63;</li>
+        <li>What are the trends in online platforms including social media and video streaming&#63;</li>
+        <li>What is Prime Video's market status&#63;</li>
+    </ul>
+    <p>
+        We conducted domain research by looking up resources related to Prime Video usage, Prime member ecosystem structure, video streaming market, screen device usage, and trends involving video streaming and social media. We found the following insights particularly interesting&#58;
+    </p>
+    <img src = "asset/insight_1.png">
+    
+    <h2 id = "observation"><br><br>Passive Observation&#58; Discover behavior patterns in context</h2>
+    <p>
+        A wide range of scenario falls into &#39;&#39;when people are not planning on watching something.&#39;&#39; We think the scenario includes but does not limit to waiting for take&#45;outs or seatings in restaurants, in between classes and meetings, coffee breaks, or even time in bathrooms. We defined the scenario as &#39;&#39;unplanned leisure time&#39;&#39; for easier reference. To understand what people currently do and find potential leverage points, we asked the following question&#58; 
+    </p>
+    <ul>
+        <li>What do people currently do during their unplanned leisure time&#63;</li>
+        <li>What devices are they using during unplanned leisure time&#63;</li>
+        <li>How do they use their devices in the context&#63;</li>
+    </ul>
+    <p>
+        In order to get real data about what people really do in context, we conducted passive observation in food lounges in shopping malls, coffee shops in schools and commercial districts, laundromats, student lounges, restaurant waiting areas, and took note of their activities. Here are some interesting insights we found&#58;
+    </p>
+    <img src = "asset/insight_21.png">
+    
+    
+    <h2 id = "interview"><br><br>Semi&#45;Structured Interviews&#58; Empathize with users</h2>
+    
+    <p>
+        Having some vague ideas for potential opportunities, we proceed to ask our potential users about their behaviors and motivations. We want to step into their shoes to create products that solve the right problem. I created the interview protocol based on the following questions&#58;
+    </p>
+    <ul>
+        <li>How do they spend their leisure time&#63;</li>
+        <li>When, where, how, and why do they watch videos&#58;</li>
+        <li>How do they decide what content to watch&#63;</li>
+        <li>What is the experience like using different streaming platforms&#63;</li>
+    </ul>
+    <p>
+        Interviewees, aged between 18 and 35, who have or have not used Prime Video were recruited, and interviews were conducted until there is no significant new information. After transcripting, coding, and affinity diagraming, we found the following themes that may lead to potential opportunities&#58;
+    </p>
+    <img src = "asset/insight_3.png">
+    
+<!--
+    <h2><br><br>Survey&#58; Validate the Results</h2>
+    <p>
+        To make sure the insights we derived, as well as the opportunity we identified is not applicable to only our research participants, we put our insights in a survey and dsitributed on facebook, WeChat and Instagram. 
+    </p>
+    <p>
+        We got feedbacks from 121 participants. 97.1&#37; of them currently reside in the US, so the result is applicable to the US market only. 79.8&#37; age between 18 and 35, so the result applies to these ages the best. Among the 79&#37; of the participants who are current Prime members, 85.4&#37; of them have been a member for more than a year. 
+    </p>
+    
+    <h3>Current Location</h3>
+    <img src = "asset/survey_location.png">
+    <p>
+        Almost all of our 121 participants 
+    </p>
+-->
+    
+    <h2 id = "persona"><br><br>Persona&#58; Evoke Empathy</h2>
+    <p>
+        Creating personas helps us summarize the information from our research. Wtih two characters in mind, we are more connected to our target users while brainstorming and designing the solutions. 
+    </p>
+    <p>
+        Rachel is a Prime member as well as an active Prime Video user, while Jack is also a Prime member, but he never used Prime Video, and pay almost no attention to what it has to offer. 
+    </p>
+    <p>
+        They share the behavior of being social addicts, meaning they like to see what their friends are doing and are willing to take part in their activities. 
+    </p>
+    <img src = "asset/persona.png">
+    <p>
+        <br>With an understanding of Rachel&#39;s and Jack&#39;s behavior pattern, we move on to tailor solutions for them. 
+    </p>
+    
+    
+</div>
+
+<!-- Innovation Opportunity--><div class = "stagediv">
+    <h1>Innovation Opportunity &amp; Final Concept</h1>
+    <p>
+        <b>My contributions in this stage include&#58;</b>
+    </p>
+    <ul>
+        <li>Provided solutions that was built into the final conept</li>
+        <li>Collaborated to came up with criteria for narrowing down solutions</li>
+        <li>Collaborated to map out interaction flow</li>
+    </ul>
+    <h3>
+        <br><br>As a reminder, here are the potential opportunities we have identified: 
+    </h3>
+    <ul>
+        <li>How can we make the 76 million Prime members also Prime Video users&#63;</li>
+        <li>How can we make the current long content on Prime Video shorter to fit better to smart phones&#63;</li>
+        <li>How can we leverage online communities and social media to make watching Prime Video contents a low-commitment and low-concentration activity&#63;</li>
+        <li>How can we encourage users to recommend shows to sheir friends&#63;</li>
+        <li>How can we make Prime Video’s content discovery process easier&#63;</li>   
+    </ul>
+    <p>
+        If we put the opportunities together with Rachel and Jack, the prompt becomes&#58;
+    </p>
+    <p id = emphasize style = "margin: 20 auto; width: 80%;">
+        How can we leverage Jack and Rachel&#39;s behavior as social addicts to make viewing the content of Prime Video a low-commitment activity and attract more users to the Prime Video platform&#63;
+    </p>
+    <p>
+        To put it simpler, how can we create an experience that serve the purpose of the diagram below&#58;
+    </p>
+    <img src = "asset/concpet.png">
+    
+    <h2><br><br>Final Concept</h2>
+    <p>
+        We evaluated more than 50 solutions derived from various brainstorming sessions based on criteria including&#58;
+    </p>
+    <ul>
+        <li>User experience&#58;
+            <ul>
+                <li>Ease of adoption</li>
+                <li>Ease of use in context</li>
+                <li>Content purchasing</li>
+            </ul>
+        </li>
+        <li>Integration into current Prime Video system</li>
+        <li>Integration into current Prime member ecosystem</li>
+        <li>Technical feasibility</li>
+        <li>Legal feasibility</li>
+        <li>Degree of change in the current content production system</li>
+        <li>Design complexity (in order to complete the UI design in time)</li>
+    </ul>
+    <p>
+        VideoMark is a combination of several solution that compliment each other to complete the close loop. In the next section, I will walk you through the details of the solution. 
+    </p>
+</div> <!--for stagediv-->
+</div> <!--for content-->
+
+
+<img src = "asset/introducing.png" style = "width: 100%;">
+
+
+<div class = "content">
+    <div style = "border-bottom: 0px; margin-bottom: 0px; padding-bottom: 0px;" class = "stagediv">
+    <h2>
+        A typical use case of VideoMark will look like this&#58; 
+    </h2>
+
+    <img src = "asset/process.png">
+
+    <h3><br><br>Interaction Roadmap</h3>
+	</div>
+</div>
+	
+    <img style = "width: 70%; margin: 0 auto;" src = "asset/interaction.png"> 
+  
+<div class = "content">
+<div class = "stagediv">        
+    
+    <h3>Value Proposition</h3>    
+    <img src = "asset/value_proposition.png">
+</div>
+    
+<!--go to market--><div class = "stagediv">
+    <h1>Go-to-market Strategy</h1>
+    <h3>Before Launch</h3>
+    <img src = "asset/launch_1.png">
+    <h3>Launch</h3>
+    <img src = "asset/launch_2.png">
+    <h3>After Launch</h3>
+    <img src = "asset/launch_3.png">
+    
+</div>
+    
+
+<!--next step--><div class = "stagediv">
+    <h1>Next Steps</h1>
+    <p>
+        The project ends with the competition. We were progressed to compete in the semi-final round, and presented our solution to judges from Kellogg School of Management and Prime Video representatives. If we were to continue building the solution, here are some aspects we need to consider&#58;</p>
+    <h3>Further Usability Testing</h3>
+    <p>
+        Usability testing can be done to improve details in user interface as well as parameters like free watching time and highlighted clip time. </p>
+    <h3>Possible Challenges in Social Media Integration</h3>
+    <p>
+        As the solution involves building a portal in social media platforms outside the Amazon ecosystem, technical compatibility as well as strategic positions need to be considered for negotiation. </p>
+    <h3>
+        Possible Challenges in Preventing Exploitation
+    </h3>
+    <p>
+        As we allow users to share clips to social media, we may need a prevent some users to exploit the system by sharing the entirety of a pieve of content. We could set a maximum number of clips that one user can share. </p>
+    <h3>Optimize Experience on TV</h3>
+    <p>
+        The concept we proposed works well on desktop devices. However, as there are also users who prefer to watch on TV, we have to design a seperate system considering different interaction models.</p>
+    
+</div>
+
+    
+    
+    
+    
+<!-- for content--> </div> 
+
+    
+    <footer id = "footer"></footer>
+</body>
