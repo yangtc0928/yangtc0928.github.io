@@ -80,11 +80,14 @@ a{
 /*    margin-left: 20px;*/
 }
 
+#chatbot{
+	margin-top: 20px;
+}
+
 .role{
     margin-top: 20px;
     line-height: 2;
     font-weight: 300;
-    
 }
 
 .role a{
