@@ -1,5 +1,5 @@
 html{
-    font-family: "lato"; 
+
 }
 
 body{
@@ -95,7 +95,7 @@ b{
 .stagediv h3{
     font-weight: 600;
 	margin: 0px auto;
-/*	width: 75%;*/
+	width: 95%;
 }
 
 .stagediv h4{
@@ -156,9 +156,10 @@ b{
 }
 
 p, li{
-    font-weight: 400;
+    font-weight: 0,300;
+	color: dimgray;
     margin: 10px auto;
-/*	width: 60%;*/
+	width: 95%;
 	
 }
 
