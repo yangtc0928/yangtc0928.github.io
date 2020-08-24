@@ -29,9 +29,11 @@ a{
     margin-right: 25px;
 }
 
+/*
 #headerlogo:hover{
     content: url(HomePage/logo_hover.png);
 }
+*/
 
 .nav{
     float: right;
@@ -167,7 +169,7 @@ a{
     font-size: 14px;
     font-weight: 300;
     margin-top: 5px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .image{
