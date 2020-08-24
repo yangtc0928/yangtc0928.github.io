@@ -65,6 +65,14 @@ a{
     margin-left: 105px;
 }
 
+.click{
+	position: absolute;
+	width: 200px;
+	margin-left: -770px;
+	margin-top: 70px
+	
+}
+
 .name h1{
     font-size: 24px;
     margin: 0px 0px;
@@ -256,5 +264,17 @@ a{
     line-height: 15px;
     z-index: 1000;
     text-decoration: none;
+}
+
+.lang{
+	text-decoration-line: underline;
+	text-decoration-color: #FFB800;
+	
+
+}
+
+.lang:hover{
+	color: #FFB800;
+	transition: 0.2s;
 }
 
